@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /home/mingjie/lab/
+
 # Read environment variables from .env files
 read_var() {
     VAR=$(grep $1 $2 | xargs)
