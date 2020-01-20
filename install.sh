@@ -2,6 +2,5 @@
 
 # Install service
 
-sudo systemctl link /home/mingjie/lab/pi-online.service
-sudo systemctl enable pi-online.service
-sudo systemctl start pi-online.service
+echo "# post status message after networking is up" >> cat /etc/network/interfaces
+echo "post-up /home/mingjie/lab/online.sh" >> cat /etc/network/interfaces
