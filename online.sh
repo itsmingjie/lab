@@ -19,7 +19,7 @@ echo $TIME > online.tmp
 
 # CPU Temperature
 CPU_TEMP=$(</sys/class/thermal/thermal_zone0/temp)
-CPU_TEMP_H=$(echo "$((CPU_TEMP/1000*9/5 + 32)) °F")
+CPU_TEMP_H=$(echo "$((CPU_TEMP/1000*9/5 + 32))°F")
 
 # Script to run after establishing remote connection
 
